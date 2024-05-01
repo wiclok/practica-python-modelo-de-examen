@@ -26,13 +26,22 @@ def order_by_age(over_of_25_years):
     sorted_by_age = sorted(over_of_25_years, key=lambda x: x[0])
     return sorted_by_age
 
+def age_different(sorted_by_age):
+    different_age = set()
+
+    for persona in sorted_by_age:
+        different_age.add(persona[0])  # Agrega la edad al conjunto de edades únicas
+
+    count_age_different = len(different_age)
+    
+    return count_age_different
 
 def ejecutar_programa():
     archivo = 'D:\\Practica\\Practica-Modelo-Examen-Python\\edades.csv'
     over_of_25_years = import_data_over_25_years(archivo)
     
-    print(order_by_age(over_of_25_years))
+    sorted_by_age = order_by_age(over_of_25_years)
 
-
+    age_different(sorted_by_age)
 if __name__ == '__main__':
     ejecutar_programa()
