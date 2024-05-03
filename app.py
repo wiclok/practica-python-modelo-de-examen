@@ -1,4 +1,5 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 import csv
 import datetime
 
@@ -64,17 +65,32 @@ def generate_DataFrame(frequency):
     df = pd.DataFrame({'Edades': edades_keys, 'fi': edades_values})
     return df
 
+def generate_graphic(DataFrame):
+    plt.plot(DataFrame['Edades'], DataFrame['fi'])
+    plt.xlabel('Edades')
+    plt.ylabel('Frecuencia')
+    plt.title('Frecuencia de edades')
+    plt.show()
+
 def ejecutar_programa():
     archivo = 'D:\\Practica\\Practica-Modelo-Examen-Python\\edades.csv'
     over_of_25_years = import_data_over_25_years(archivo)
-    
+    print('lista de personas con mas de 25 años: ', over_of_25_years)
+    print('')
     sorted_by_age = order_by_age(over_of_25_years)
-    
+    print('Lista de edades ordenadas: ', sorted_by_age)
+    print('')
     count_age_different = age_different(sorted_by_age)
-    
+    print('Cantidad de edades diferentes: ', count_age_different)
     frequency = frequency_of_age(sorted_by_age)
-    
+    print('Frecuencia de las edades: ', frequency)
+    print('')
     DataFrame = generate_DataFrame(frequency)
+    print('DataFrame creado con los datos de frecuencia de edades:')
+    print(DataFrame)
+    print('')
+    generate_graphic(DataFrame)
+    print('Grafico creado con exito')
 
 if __name__ == '__main__':
     ejecutar_programa()
