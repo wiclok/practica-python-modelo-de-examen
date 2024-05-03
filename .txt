@@ -1,0 +1,20 @@
+● ¿Qué es Python y por qué es popular en el análisis de datos?
+
+  - Python es un lenguaje de programación de alto nivel, interpretado y de propósito general.
+  Es popular en el análisis de datos por su sintaxis clara y legible, por su amplia gama de bibliotecas especializadas, comunidad activa y flexibilidad para abordar diferentes problemas de analisis de datos.
+
+● Explica la diferencia entre una lista y una tupla en Python.
+
+  - La principal diferencia entre una lista y una tupla en python es por su mutabilidad, las listas son mutables y las tuplas son inmutables. Esto influye en cómo se utilizan y en qué situaciones son más apropiadas.
+
+● ¿Qué son los diccionarios en Python y para qué se utilizan comúnmente?
+
+  - Los diccionarios en Python son estructuras de datos que permiten almacenar pares de clave-valor. Cada elemento en un diccionario consiste en una clave única y su correspondiente valor asociado. La clave actúa como un identificador único que se utiliza para acceder al valor correspondiente.
+
+● ¿Qué diferencia el operador de bucle “for” de python con respecto al javascript?
+
+  - Aunque el bucle "for" en Python y JavaScript comparten la misma idea de iteración, difieren en la sintaxis y en cómo se utilizan para iterar sobre secuencias y acceder a elementos en cada iteración.
+
+● ¿Qué es un entorno virtual en Python y por qué es útil?
+
+  - Un entorno virtual en Python es una herramienta que permite crear un entorno de desarrollo aislado para un proyecto en particular. Esto significa que puedes tener diferentes versiones de paquetes de Python y sus dependencias instaladas en diferentes entornos virtuales sin afectar al sistema global de Python ni a otros proyectos.
